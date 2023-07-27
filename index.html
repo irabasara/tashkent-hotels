@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/dextop.css"> -->
+  </head>
+<body>
+    <header class="page-header">
+        <div class="container header-container">
+            <nav class="page-nav">
+                <a href="./index.html" class="link logo">
+                    <img src="./logo.svg" alt="logo" width="80px"></a>
+                <button type="button" class="mobile-menu-open js-open-menu">
+                    <svg width="35" height="26">
+                        <use href="./sprite.svg#icon-burger"></use>
+                    </svg>
+                </button>
+                <div class="pc-header">
+                    <ul>
+                        <li><a href="">Tashkent hotels</a></li>
+                        <li><a href="">Tashkent review</a></li>
+                        <li><a href="">Tashkent tours</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lang">
+                    <button type="button">En</button>
+                    <button type="button">Ru</button>
+    
+                </div>
+            </nav>
+    
+        </div>
+
+        <div class="mobile-menu js-menu-container is-hidden">
+            <div class="container mobile-menu-conteiner">
+                <button type="button" class="clouse-menu-btn js-close-menu">
+                    <img src="./close.svg" alt="close">
+                </button>
+                <div  class="logo"><a href="./index.html">
+                    <img src="./logo.svg" alt="logo" width="50px" height="30px"></a></div>
+                <ul class="menu-mobile">
+                    <li class="menu-item-mobile">
+                        <a href="./index.html" class="menu-link-mobile">Tashkent hotels</a>
+                    </li>
+                    <li class="menu-item-mobile">
+                        <a href="./portfolio.html" class="menu-link-mobile">Tashkent review</a>
+                    </li>
+                    <li class="menu-item-mobile">
+                        <a href="./portfolio.html" class="menu-link-mobile">Tashkent tours</a>
+                    </li>
+                    <li class="menu-item-mobile">
+                        <a href="" class="menu-link-mobile ">Contacts</a>
+                    </li>
+                </ul>
+                <address>
+                    <ul class="address-container">
+        
+                        <li>
+                            <a href="tel:+110001111111" class="phone-number">Tel: +998 71 1503020</a>
+                        </li>
+                        <li>
+                            <a href="" class="local-info">Mirobod kochasi-1, 47A, Tashkent 100015, Uzbekistan</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    
+    </header>
+    <main>
+        <section class="container">
+            <h1 class="hero-title">All hotels</h1>
+            <ul class="hotels-list">
+                <li class="hotel-item">
+                    <div class="img-hotel">
+                        <picture>
+                            <source srcset="./images/dextop.png 1x, ./images/dextop.png 2x" media="(min-width: 850px)">
+                            <source srcset="./images/test-img-for-mobile.png 1x, ./images/test-img-for-mobile.png 2x"
+                                media="(max-width: 850px)">
+                        
+                            <img src="./images/dextop.png" alt="hotel" width="360" height="300" />
+                        </picture>
+                    </div>
+                    <div class="hotel-info">
+                        <h2>International Hotel</h2>
+                <img src="./stars.svg" alt="stars">
+              
+                    <div class="local-hotel">
+                            <img src="./location.svg" alt="location">
+                        <a href="">107A, Amir Temur str., Tashkent, Uzbekistan</a>
+                    </div>
+                    </div>
+                </li>
+<li class="hotel-item">
+    <div class="img-hotel">
+        <picture>
+            <source srcset="./images/dextop.png 1x, ./images/dextop.png 2x" media="(min-width: 850px)">
+            <source srcset="./images/test-img-for-mobile.png 1x, ./images/test-img-for-mobile.png 2x"
+                media="(max-width: 850px)">
+
+            <img src="./images/dextop.png" alt="hotel" width="360" height="300" />
+        </picture>
+    </div>
+    <div class="hotel-info">
+        <h2>International Hotel</h2>
+        <svg width="122" height="18">
+            <use href="./sprite.svg#icon-stars"></use>
+        </svg>
+        <div class="local-hotel">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#icon-map"></use>
+            </svg>
+            <a href="">107A, Amir Temur str., Tashkent, Uzbekistan</a>
+        </div>
+    </div>
+</li>
+
+<li class="hotel-item">
+    <div class="img-hotel">
+        <picture>
+            <source srcset="./images/dextop.png 1x, ./images/dextop.png 2x" media="(min-width: 850px)">
+            <source srcset="./images/test-img-for-mobile.png 1x, ./images/test-img-for-mobile.png 2x"
+                media="(max-width: 850px)">
+
+            <img src="./images/dextop.png" alt="hotel" width="360" height="300" />
+        </picture>
+    </div>
+    <div class="hotel-info">
+        <h2>International Hotel</h2>
+        <svg width="122" height="18">
+            <use href="./sprite.svg#icon-stars"></use>
+        </svg>
+        <div class="local-hotel">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#icon-map"></use>
+            </svg>
+            <a href="">107A, Amir Temur str., Tashkent, Uzbekistan</a>
+        </div>
+    </div>
+</li>
+
+<li class="hotel-item">
+    <div class="img-hotel">
+        <picture>
+            <source srcset="./images/dextop.png 1x, ./images/dextop.png 2x" media="(min-width: 850px)">
+            <source srcset="./images/test-img-for-mobile.png 1x, ./images/test-img-for-mobile.png 2x"
+                media="(max-width: 850px)">
+
+            <img src="./images/dextop.png" alt="hotel" width="360" height="300" />
+        </picture>
+    </div>
+    <div class="hotel-info">
+        <h2>International Hotel</h2>
+        <svg width="122" height="18">
+            <use href="./sprite.svg#icon-stars"></use>
+        </svg>
+        <div class="local-hotel">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#icon-map"></use>
+            </svg>
+            <a href="">107A, Amir Temur str., Tashkent, Uzbekistan</a>
+        </div>
+    </div>
+</li>
+
+<li class="hotel-item">
+    <div class="img-hotel">
+        <picture>
+            <source srcset="./images/dextop.png 1x, ./images/dextop.png 2x" media="(min-width: 850px)">
+            <source srcset="./images/test-img-for-mobile.png 1x, ./images/test-img-for-mobile.png 2x"
+                media="(max-width: 850px)">
+
+            <img src="./images/dextop.png" alt="hotel" width="360" height="300" />
+        </picture>
+    </div>
+    <div class="hotel-info">
+        <h2>International Hotel</h2>
+        <svg width="122" height="18">
+            <use href="./sprite.svg#icon-stars"></use>
+        </svg>
+        <div class="local-hotel">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#icon-map"></use>
+            </svg>
+            <a href="">107A, Amir Temur str., Tashkent, Uzbekistan</a>
+        </div>
+    </div>
+</li>
+
+<li class="hotel-item">
+    <div class="img-hotel">
+        <picture>
+            <source srcset="./images/dextop.png 1x, ./images/dextop.png 2x" media="(min-width: 850px)">
+            <source srcset="./images/test-img-for-mobile.png 1x, ./images/test-img-for-mobile.png 2x"
+                media="(max-width: 850px)">
+
+            <img src="./images/dextop.png" alt="hotel" width="360" height="300" />
+        </picture>
+    </div>
+    <div class="hotel-info">
+        <h2>International Hotel</h2>
+        <svg width="122" height="18">
+            <use href="./sprite.svg#icon-stars"></use>
+        </svg>
+        <div class="local-hotel">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#icon-map"></use>
+            </svg>
+            <a href="">107A, Amir Temur str., Tashkent, Uzbekistan</a>
+        </div>
+    </div>
+</li>
+
+<li class="hotel-item">
+    <div class="img-hotel">
+        <picture>
+            <source srcset="./images/dextop.png 1x, ./images/dextop.png 2x" media="(min-width: 850px)">
+            <source srcset="./images/test-img-for-mobile.png 1x, ./images/test-img-for-mobile.png 2x"
+                media="(max-width: 850px)">
+
+            <img src="./images/dextop.png" alt="hotel" width="360" height="300" />
+        </picture>
+    </div>
+    <div class="hotel-info">
+        <h2>International Hotel</h2>
+        <svg width="122" height="18">
+            <use href="./sprite.svg#icon-stars"></use>
+        </svg>
+        <div class="local-hotel">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#icon-map"></use>
+            </svg>
+            <a href="">107A, Amir Temur str., Tashkent, Uzbekistan</a>
+        </div>
+    </div>
+</li>
+
+<li class="hotel-item">
+    <div class="img-hotel">
+        <picture>
+            <source srcset="./images/dextop.png 1x, ./images/dextop.png 2x" media="(min-width: 850px)">
+            <source srcset="./images/test-img-for-mobile.png 1x, ./images/test-img-for-mobile.png 2x"
+                media="(max-width: 850px)">
+
+            <img src="./images/dextop.png" alt="hotel" width="360" height="300" />
+        </picture>
+    </div>
+    <div class="hotel-info">
+        <h2>International Hotel</h2>
+        <svg width="122" height="18">
+            <use href="./sprite.svg#icon-stars"></use>
+        </svg>
+        <div class="local-hotel">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#icon-map"></use>
+            </svg>
+            <a href="">107A, Amir Temur str., Tashkent, Uzbekistan</a>
+        </div>
+    </div>
+</li>
+
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="container left=container">
+                <a href="./index.html" class="link logo">
+                    <img src="./logo.svg" alt="logo" width="80px"></a>
+               </div>
+               <div class="right-container">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="">Tashkent hotels</a></li>
+                        <li><a href="">Tashkent review</a></li>
+                        <li><a href="">Tashkent tours</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+               </div>
+               
+    </footer>
+  
+    <script type="module" src="./mobile-menu.js"></script>
+</body>
