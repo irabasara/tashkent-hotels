@@ -1,0 +1,122 @@
+/* li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+section {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--primary-text);
+}
+:root {
+  --axcent: #14bee3;
+  --primary-text: #000000;
+  --white: #ffffff;
+}
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+} */
+
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tour-title {
+    margin-bottom: 20px;
+  }
+  .tout-info {
+    margin-top: 20px;
+  }
+  .tout-info span {
+    color: var(--axcent);
+  }
+  .tour-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .tour-item {
+    background-image: url(../images/test-img-for-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 30px;
+    height: 286px;
+    width: 320px;
+    text-align: center;
+    color: var(--white);
+  }
+  @media (min-width: 850px) {
+    .tour-item {
+      background-image: url(../images/dextop.png);
+      max-height: 500px;
+      max-width: 500px;
+    }
+  }
+
+  .tour-item h2 {
+    margin-top: 105px;
+    width: 300px;
+  }
+  .tour-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0;
+    width: 70%;
+    height: 39px;
+    color: var(--white);
+    background-color: var(--axcent);
+    border-radius: 30px;
+    border: none;
+  }
+}
+
+/* ===============DEXTOP===================== */
+/* ===============DEXTOP===================== */
+/* ===============DEXTOP===================== */
+/* ===============DEXTOP===================== */
+/* ===============DEXTOP===================== */
+
+@media screen and (min-width: 850px) {
+  .tour-item h2 {
+    margin-top: 124px;
+  }
+  .tour-list {
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+}

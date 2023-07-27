@@ -3,6 +3,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: var(--primary-text);
 }
 section {
   padding-bottom: 50px;
@@ -14,6 +15,7 @@ body {
   color: var(--primary-text);
 }
 :root {
+  --axcent: #14bee3;
   --primary-text: #000000;
   --white: #ffffff;
 }
@@ -83,7 +85,7 @@ img {
   }
 
   .logo {
-    width: 80px;
+    max-width: 80px;
   }
   .mobile-menu {
     position: absolute;
@@ -138,6 +140,7 @@ img {
     margin-bottom: 20px;
   }
   .phone-number {
+    font-style: normal;
     font-weight: 600;
     color: var(--primary-text);
   }
@@ -182,7 +185,65 @@ img {
     width: 20px;
     margin: 0;
   }
+  .footer-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: #f0fcff;
+  }
+  .footer-container div {
+    min-width: 140px;
+  }
+  .logo-container {
+    max-width: 80px;
+  }
+  .footer-policity {
+    margin-top: 30px;
+    min-width: 106px;
+    color: var(--primary-text);
+  }
+  .footer-advantor {
+    margin-top: 35px;
+    min-width: 126px;
+    font-size: 12px;
+  }
+  .footer-location {
+    margin-top: 10px;
+    width: 130px;
+    font-size: 12px;
+  }
+  .footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .info {
+    width: 146px;
+    font-style: normal;
+    font-size: 12px;
+    color: var(--primary-text);
+  }
+  .footer-address-container img {
+    width: 16px;
+  }
+  .footer-address-container li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  /* .policity {
+    display: none;
+  } */
 }
+/* ===============DEXTOP===================== */
+/* ===============DEXTOP===================== */
+/* ===============DEXTOP===================== */
+/* ===============DEXTOP===================== */
+/* ===============DEXTOP===================== */
 
 @media screen and (min-width: 850px) {
   .mobile-menu-open {
@@ -249,5 +310,34 @@ img {
   }
   .hotel-info h2 {
     font-size: 20px;
+  }
+  /* .footer-container {
+    display: block;
+  }
+  .footer-container ul {
+    display: none;
+  }
+  .footer-policity {
+    display: block;
+  } */
+  .footer-policity {
+    min-width: 100%;
+  }
+  /* .footer-location {
+    margin: 0;
+    width: 100%;
+  }
+  .footer-advantor {
+    margin: 0;
+  } */
+  .policity-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+  }
+  .footer-nav-list {
+    flex-direction: row;
   }
 }
