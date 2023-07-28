@@ -13,7 +13,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./tour-style.css" />
+    <link rel="stylesheet" href="./tour-info.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 </head>
 
@@ -80,40 +81,59 @@
 
     </header>
     <main>
-     <section class="container">
-        <h1 class="tour-title">Excursions</h1>
-        <p>A walk with a guide in the capital of Uzbekistan is an excellent opportunity to learn more of the city that is 2200
-        years old. Today this biggest city of Central Asia is cultural and economic center of the country. The city combines old
-        residential quarters with narrow streets and business-centers with wide alleys among which there are many historical
-        sights. Besides, Tashkent can boast its bright bazaars, green parks, fountains, and of course, the metro line, that is
-        not only means of transportation, but also a beautiful attraction of the city.
-        
-       </p>
-       <p class="tout-info">Moreover, we recommend you to take not only Tashkent tour, but explore its vicinities as well. There are picturesque
-    Chatkal Mountains in the city surroundings, with turquoise water of Charvak reservoir. Here you can go on a hiking tour
-    to the beautiful mountain gorges, take a boat trip along the lake, enjoy the beauty of Uzbekistan Mountains, have picnic
-    in the nature, and even take a risk going down the Gulkam canyon with insurance support.
-    
-    <span>Tours to Tashkent</span> and its vicinities make your holiday interesting and fascinating!</p>
-        <ul class="tour-list">
-            <li class="tour-item">
-                <h2>Excursion around Tashkent</h2>
-                <a href="./tour-info.html">Read more</a>
-            </li>
-            <li class="tour-item">
-                <h2>Excursion around Tashkent</h2>
-                <a href="./tour-info.html">Read more</a>
-            </li>
-            <li class="tour-item">
-                <h2>Excursion around Tashkent</h2>
-                <a href="./tour-info.html">Read more</a>
-            </li>
-            <li class="tour-item">
-                <h2>Excursion around Tashkent</h2>
-                <a href="./tour-info.html">Read more</a>
-            </li>
-        </ul>
-     </section>
+        <section class="container">
+            <h1 class="tour-title">Excursion around Tashkent</h1>
+            <p class="tout-info">Discover Tashkent in a day long tour. The tour will introduce you ancient part of Tashkent sights in the beginning, and
+            in the end – the modern part of the city. First, you will visit the Old city with its colorful Chor-su bazaar, where the
+            main historical sight , Khast Imom complex, is located. The building consists of mosques and madrasas; and famous for
+            exhibited Koraan of the 7th century. After you will see Tashkent metro. You will enjoy the main squares of the city and
+            roundup the excursion at the Museum of Applied where pieces of arts, archeological findings and national clothing are
+            exhibited.<span>Tours to Tashkent</span> and its vicinities make your holiday interesting and fascinating!
+            </p>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                    <picture>
+                        <source srcset="../images/test-img-for-mobile.png 1x,
+                    												../images/test-img-for-mobile.png 2x" media="(min-width: 850px)" />
+                        <source srcset="../images/dextop.png 1x,
+                    												../images/dextop.png 2x" media="(min-width 320px)" />
+                        <img src="./img/swiper/mobile-swiper-1.jpg" alt="watch" width="320" />
+                    </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="../images/test-img-for-mobile.png 1x,
+                                        												../images/test-img-for-mobile.png 2x" media="(min-width: 850px)" />
+                            <source srcset="../images/dextop.png 1x,
+                                        												../images/dextop.png 2x" media="(min-width 320px)" />
+                            <img src="./img/swiper/mobile-swiper-1.jpg" alt="watch" width="320" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="../images/test-img-for-mobile.png 1x,
+                                        												../images/test-img-for-mobile.png 2x" media="(min-width: 850px)" />
+                            <source srcset="../images/dextop.png 1x,
+                                        												../images/dextop.png 2x" media="(min-width 320px)" />
+                            <img src="./img/swiper/mobile-swiper-1.jpg" alt="watch" width="320" />
+                        </picture>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"><img src="../svg/arrowcircleright.svg" alt=""></div>
+                <div class="swiper-button-next"><img src="../svg/right.svg" alt=""></div>
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+          <!-- <img src="../images/test-img-for-mobile.png" alt="city" width="320px"> -->
+        </section>
 
     </main>
     <footer>
@@ -133,7 +153,7 @@
                 <ul class="footer-nav-list">
                     <li><a href="">Tashkent hotels</a></li>
                     <li><a href="">Tashkent review</a></li>
-                    <li><a href="./tour.html">Tashkent tours</a></li>
+                    <li><a href="">Tashkent tours</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
 
@@ -158,6 +178,38 @@
 
 
     </footer>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
+        const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                effect:'fade',
+                 fadeEffect: {
+                crossFade: true
+            },
+             keyboard: {
+                enabled: true,
+            },
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="../mobile-menu.js"></script>
 </body>
