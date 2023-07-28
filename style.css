@@ -39,7 +39,7 @@ ol {
 }
 img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
@@ -174,7 +174,7 @@ img {
   }
   .local-hotel {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 5px;
     margin-top: 12px;
   }
