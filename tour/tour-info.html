@@ -90,10 +90,8 @@
             roundup the excursion at the Museum of Applied where pieces of arts, archeological findings and national clothing are
             exhibited.<span>Tours to Tashkent</span> and its vicinities make your holiday interesting and fascinating!
             </p>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
+            <div class="swiper" style="overflow: visible;">
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                     <picture>
                         <source srcset="../images/dextop.png" width="560px" height="500" media="(min-width: 850px)" />
@@ -113,20 +111,12 @@
                         </picture>
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-            
-                <!-- If we need navigation buttons -->
-       
-                    <div class="swiper-button-prev" style="--swiper-navigation-color: #000;--swiper-navigation-size: 20px"></div>
-                    <div class="swiper-button-next" style="--swiper-navigation-color: #000;--swiper-navigation-size: 20px"></div>
+      
+        <div class="swiper-button-prev" style="--swiper-navigation-color: #000;--swiper-navigation-size: 20px;--swiper-navigation-sides-offset:-25px"></div>
+        <div class="swiper-button-next" style="--swiper-navigation-color: #000;--swiper-navigation-size: 20px;--swiper-navigation-sides-offset:-25px"></div>
         
-              
-            
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-          <!-- <img src="../images/test-img-for-mobile.png" alt="city" width="320px"> -->
+
         </section>
 
     </main>
@@ -176,8 +166,6 @@
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
         const swiper = new Swiper('.swiper', {
-                // Optional parameters
-                // slidesPerView: 3,
                 effect:'fade',
                  fadeEffect: {
                 crossFade: true
@@ -187,25 +175,11 @@
             },
                 direction: 'horizontal',
                 loop: true,
-
-                // If we need pagination
-              pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-                },
-
-                // Navigation arrows
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
-
-                // And if we need scrollbar
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                },
-    
-
+ 
             });
     </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
