@@ -162,6 +162,9 @@ img {
   .img-hotel {
     width: 167px;
   }
+  .img-hotel img {
+    width: 100%;
+  }
   .hotel-info h2 {
     font-size: 14px;
     margin-bottom: 5px;
@@ -178,7 +181,7 @@ img {
     gap: 5px;
     margin-top: 12px;
   }
-  .local-hotel a {
+  .local-hotel p {
     font-size: 12px;
   }
   .local-hotel img {
