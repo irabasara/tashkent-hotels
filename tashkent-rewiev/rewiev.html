@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="../style.css" />
@@ -258,7 +258,43 @@
 </ul>
 
         </section>
+        <section><div class="swiper mySwiper">
+            <h2 class="gallery">Gallery</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="../images/mob.png" width="560px" height="500px" media="(min-width: 850px)" />
+                        <img src="../images/mob.png" alt="" width="300px" height="300px" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                <picture>
+                    <source srcset="../images/mob.png" width="560px" height="500px" media="(min-width: 850px)" />
+                    <img src="../images/mob.png" alt="" width="300px" height="300px" />
+                </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="../images/mob.png" width="560px" height="500px" media="(min-width: 850px)" />
+                        <img src="../images/mob.png" alt="" width="300px" height="300px" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="../images/mob.png" width="560px" height="500px" media="(min-width: 850px)" />
+                        <img src="../images/mob.png" alt="" width="300px" height="300px" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="../images/mob.png" width="560px" height="500px" media="(min-width: 850px)" />
+                        <img src="../images/mob.png" alt="" width="300px" height="300px" />
+                    </picture>
+                </div>
+            </div>
+        </div></section>
         <section class="container">
+            
             <h2 class="title-pc">History of Tashkent</h2>
             <div class="history">
                 <h2>History</h2>
@@ -355,5 +391,16 @@
 
 
     </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="../mobile-menu.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "2",
+            centeredSlides: true,
+            spaceBetween: 30,
+            
+        });
+    </script>
 </body>

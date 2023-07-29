@@ -102,8 +102,8 @@
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="../images/dextop.png" width="560px" height="500" media="(min-width: 850px)" />
-                            <img src="../images/test-img-for-mobile.png" alt="" />
+                            <source srcset="../images/mob.png" width="560px" height="500" media="(min-width: 850px)" />
+                            <img src="../images/mob.png" alt="" />
                         </picture>
                     </div>
                     <div class="swiper-slide">
@@ -117,30 +117,11 @@
                 <!-- <div class="swiper-pagination"></div> -->
             
                 <!-- If we need navigation buttons -->
-                <div class="swiper-nav">
-                    <div class="swiper-btn">
-                        <div class="button-prev">
-                        <img src="../svg/arrowcircleright.svg" alt="">
-                        </div>
-                        <div class="button-next">
-                        <img src="../svg/right.svg" alt="" width="20px">
-                        </div>
-                    </div>
-                <!-- <div class="swiper-nav">
-                    <div class="swiper-btn">
-                        <div class="button-prev">
-                            <svg class="left-icon" width="32" height="32">
-                                <use href="../svg/right.svg"></use>
-                            </svg>
-                        </div>
-                        <div class="button-next">
-                            <svg class="right-icon" width="32" height="32">
-                                <use href="../svg/arrowcircleright.svg"></use>
-                            </svg>
-                        </div>
-                    </div> -->
-                <!-- <div class="swiper-button-prev" style="--swiper-navigation-color: #000>"</div></div>
-                <div class="swiper-button-next"></div> -->
+       
+                    <div class="swiper-button-prev" style="--swiper-navigation-color: #000;--swiper-navigation-size: 20px"></div>
+                    <div class="swiper-button-next" style="--swiper-navigation-color: #000;--swiper-navigation-size: 20px"></div>
+        
+              
             
                 <!-- If we need scrollbar -->
                 <!-- <div class="swiper-scrollbar"></div> -->
@@ -215,8 +196,8 @@
 
                 // Navigation arrows
                 navigation: {
-                    nextEl: '.button-next',
-                    prevEl: '.button-prev',
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
 
                 // And if we need scrollbar

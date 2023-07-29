@@ -17,6 +17,7 @@ img {
     width: 320px;
     height: 300px;
     border-radius: 30px;
+    margin-top: 50px;
   }
   .swiper-button-next {
     color: black;
