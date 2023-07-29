@@ -96,29 +96,20 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                     <picture>
-                        <source srcset="../images/test-img-for-mobile.png 1x,
-                    												../images/test-img-for-mobile.png 2x" media="(min-width: 850px)" />
-                        <source srcset="../images/dextop.png 1x,
-                    												../images/dextop.png 2x" media="(min-width 320px)" />
-                        <img src="./img/swiper/mobile-swiper-1.jpg" alt="watch" width="320" />
+                        <source srcset="../images/dextop.png" width="560px" height="500" media="(min-width: 850px)" />
+                        <img src="../images/test-img-for-mobile.png" alt="" />
                     </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="../images/test-img-for-mobile.png 1x,
-                                        												../images/test-img-for-mobile.png 2x" media="(min-width: 850px)" />
-                            <source srcset="../images/dextop.png 1x,
-                                        												../images/dextop.png 2x" media="(min-width 320px)" />
-                            <img src="./img/swiper/mobile-swiper-1.jpg" alt="watch" width="320" />
+                            <source srcset="../images/dextop.png" width="560px" height="500" media="(min-width: 850px)" />
+                            <img src="../images/test-img-for-mobile.png" alt="" />
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="../images/test-img-for-mobile.png 1x,
-                                        												../images/test-img-for-mobile.png 2x" media="(min-width: 850px)" />
-                            <source srcset="../images/dextop.png 1x,
-                                        												../images/dextop.png 2x" media="(min-width 320px)" />
-                            <img src="./img/swiper/mobile-swiper-1.jpg" alt="watch" width="320" />
+                            <source srcset="../images/dextop.png" width="560px" height="500" media="(min-width: 850px)" />
+                            <img src="../images/test-img-for-mobile.png" alt="" />
                         </picture>
                     </div>
                 </div>
@@ -126,8 +117,30 @@
                 <!-- <div class="swiper-pagination"></div> -->
             
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"><img src="../svg/arrowcircleright.svg" alt=""></div>
-                <div class="swiper-button-next"><img src="../svg/right.svg" alt=""></div>
+                <div class="swiper-nav">
+                    <div class="swiper-btn">
+                        <div class="button-prev">
+                        <img src="../svg/arrowcircleright.svg" alt="">
+                        </div>
+                        <div class="button-next">
+                        <img src="../svg/right.svg" alt="" width="20px">
+                        </div>
+                    </div>
+                <!-- <div class="swiper-nav">
+                    <div class="swiper-btn">
+                        <div class="button-prev">
+                            <svg class="left-icon" width="32" height="32">
+                                <use href="../svg/right.svg"></use>
+                            </svg>
+                        </div>
+                        <div class="button-next">
+                            <svg class="right-icon" width="32" height="32">
+                                <use href="../svg/arrowcircleright.svg"></use>
+                            </svg>
+                        </div>
+                    </div> -->
+                <!-- <div class="swiper-button-prev" style="--swiper-navigation-color: #000>"</div></div>
+                <div class="swiper-button-next"></div> -->
             
                 <!-- If we need scrollbar -->
                 <!-- <div class="swiper-scrollbar"></div> -->
@@ -195,20 +208,23 @@
                 loop: true,
 
                 // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
+              pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
                 },
 
                 // Navigation arrows
                 navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    nextEl: '.button-next',
+                    prevEl: '.button-prev',
                 },
 
                 // And if we need scrollbar
                 scrollbar: {
                     el: '.swiper-scrollbar',
                 },
+    
+
             });
     </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
